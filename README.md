@@ -15,3 +15,8 @@ docker run --name yacd -d --net=host --restart=unless-stopped mrbruce516/yacd
 ```bash
 docker-compose up -d
 ```
+由于yacd需要监听本地设备/局域网设备的clash状态用以控制，所以必须以host网络模式启动。
+
+若需要更改端口，请进入容器修改 /etc/nginx/conf.d/default.conf 中的端口为你需要的端口即可
+
+have fun!
