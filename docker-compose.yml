@@ -1,0 +1,7 @@
+version: '3.5'
+services:
+  yacd:
+    image: mrbruce516/yacd
+    container_name: yacd
+    network_mode: "host"
+    restart: "unless-stopped"
